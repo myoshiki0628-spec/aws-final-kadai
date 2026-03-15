@@ -3,8 +3,8 @@ version: 0.2
 phases:
   build:
     commands:
-      - aws deploy push --application-name XXX --s3-location s3://XXX/artifact.zip --source src
+      - aws deploy push --application-name aws-final-app --s3-location s3://aws-final-kadai-bucket-c/artifact.zip --source .
+
 artifacts:
   files:
     - '**/*'
-  base-directory: src
